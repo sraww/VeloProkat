@@ -14,8 +14,7 @@ public partial class User
     public string Patronymic { get; set; } = null!;
 
     public string Login { get; set; } = null!;
-
     public string Password { get; set; } = null!;
-        public int Role { get; set; }
+    public int Role { get; set; }
     public virtual Role RoleNavigation { get; set; } = null!;
 }
