@@ -109,7 +109,6 @@
                     <TextBox Name="unitBox" Margin="1" Height="20" Width="100"
                          Text="{Binding Unit}"/>
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
@@ -125,9 +124,7 @@
                             </Binding>
                         </TextBox.Text>
                     </TextBox>
-
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
@@ -143,7 +140,6 @@
                     <TextBox Name="maxcostBox" Margin="1" Height="20"
                          Text="{Binding MaxCost}"/>
                 </StackPanel>
-
             </StackPanel>
 
             <StackPanel Margin="10"
