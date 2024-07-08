@@ -7,7 +7,6 @@ public partial class Product
 {
     public virtual string? ImagePath { get { return System.IO.Path.Combine(Environment.CurrentDirectory, $"images/{Photo}"); } }
     public int Id { get; set; }
-
     public string? ArticleNumber { get; set; }
 
     public string? Name { get; set; }

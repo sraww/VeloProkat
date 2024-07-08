@@ -14,15 +14,12 @@
         Icon="Resources/2.ico"
         WindowStartupLocation="CenterScreen">
     <Grid>
-       
-        <StackPanel Orientation="Horizontal"
+               <StackPanel Orientation="Horizontal"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-
             <StackPanel VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Margin="10">
-
                 <StackPanel Name="idPanel">
                     <TextBlock Margin="1"
                                Height="20"
@@ -33,9 +30,7 @@
                              Height="20"
                              IsReadOnly="True"
                              Text="{Binding Id}"/>
-
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock Margin="1" Height="20" Width="100" Text="Имя"/>
                     <TextBox Name="nameBox"
@@ -43,7 +38,6 @@
                              Height="20"
                              Text="{Binding Name}"/>
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
