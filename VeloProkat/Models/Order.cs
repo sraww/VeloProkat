@@ -10,8 +10,6 @@ public partial class Order
     public string Status { get; set; } = null!;
 
     public DateTime DeliveryDate { get; set; }
-
     public string PickupPoint { get; set; } = null!;
-
     public virtual ICollection<OrderProduct> OrderProducts { get; } = new List<OrderProduct>();
 }
