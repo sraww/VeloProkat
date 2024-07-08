@@ -81,14 +81,10 @@
                     <TextBox Name="discountAmountBox" Margin="1" Height="20"
                          Text="{Binding DiscountAmount}"/>
                 </StackPanel>
-
             </StackPanel>
-
             <StackPanel Margin="10"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
-
-
                 <StackPanel>
                     <TextBlock Margin="1"
                                Height="20"
@@ -99,7 +95,6 @@
                              Height="20"
                              Text="{Binding ArticleNumber}"/>
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
@@ -107,7 +102,6 @@
                     <TextBox Name="supplierBox" Margin="1" Height="20" Width="100"
                          Text="{Binding Supplier}"/>
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
