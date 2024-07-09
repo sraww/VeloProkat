@@ -68,15 +68,11 @@
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Grid.Column="6">
-
                 <TextBlock Name="statusUser" Margin="1" Text="Роль: Иванов Иван Иванович" Height="20" Width="231" TextAlignment="Center"/>
                 <Button Margin="1" Content="Выход" Height="20" Width="100"
-                        Click="exitButtonClick"/>
-
+                       Click="exitButtonClick"/>
             </StackPanel>
-
         </Grid>
-
         <ListView Grid.Row ="1"
 	  x:Name="productlistView"
 	  ScrollViewer.HorizontalScrollBarVisibility="Disabled"
@@ -89,7 +85,6 @@
                               HorizontalAlignment="Center"/>
                 </ItemsPanelTemplate>
             </ListView.ItemsPanel>
-
             <ListView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Width="300">
@@ -101,7 +96,6 @@
 				  HorizontalAlignment="Center"
 				  Margin="0"
                                   FontSize="15"/>
-
                         <Border BorderBrush="#FF498C51" BorderThickness="2">
                             <Image 
 			                       HorizontalAlignment="Center"
@@ -116,8 +110,6 @@
                             </Image>
                         </Border>
 
-
-
                         <TextBlock FontSize="15" Text="{Binding ArticleNumber, StringFormat=Артикль:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Category, StringFormat=Категория:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Manifacturer, StringFormat=Производитель:{0}}"/>
@@ -129,16 +121,9 @@
                         <TextBlock FontSize="15" Text="{Binding MaxDiscount, StringFormat=Максимальная скидка:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Supplier, StringFormat=Поставщик:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Unit, StringFormat=Ед.измерения:{0}}"/>
-
                     </StackPanel>
-
-
-
                 </DataTemplate>
             </ListView.ItemTemplate>
-
-
-
         </ListView>
 
         <StackPanel Grid.Row="2"
