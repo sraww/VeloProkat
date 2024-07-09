@@ -165,7 +165,6 @@
                         HorizontalAlignment="Center">
 
                 <TextBlock  Margin="1" Height="20" Text="Фото"/>
-
                 <TextBox Name="imageBox"
                          Margin="1"
                          Height="20"
@@ -183,15 +182,11 @@
                            Source="{Binding ImagePath}">
                     </Image>
                 </Border>
-
                 <Button Height="20"
                         Margin="0 10 0 0"
                         Content="Добавить"
                         Click="AddImageToUser"/>
-
             </StackPanel>
-
-
         </StackPanel>
 
     </Grid>
