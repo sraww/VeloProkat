@@ -51,7 +51,6 @@ namespace VeloProkat
 
                 User user = db.Users.Where(u => u.Login == textBox_Login.Text && u.Password == passwordBox_Password.Password).Include(u => u.RoleNavigation).FirstOrDefault() as User;
 
-
                 // admin
                 if (user != null && verify)
                 {
@@ -100,7 +99,6 @@ namespace VeloProkat
             this.Close();
 
         }
-
         private void Hyperlink_Click(object sender, RoutedEventArgs e)
         {
 
