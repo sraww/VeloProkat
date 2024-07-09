@@ -144,10 +144,7 @@
         Height="20"
         Width="100"
         Click="delUserButton"/>
-
             </StackPanel>
-
         </StackPanel>
-
     </Grid>
     </Window>
