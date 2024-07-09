@@ -175,8 +175,7 @@
                         Height="200"
                         Width="150"
                         BorderBrush="#FF76E383"
-                        BorderThickness="2"
-                        >
+                        BorderThickness="2" >
                     <Image Name="imageBoxPath"
                            Margin="1"
                            Source="{Binding ImagePath}">
