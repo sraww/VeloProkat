@@ -56,7 +56,6 @@
                            Name="countProducts"
                            Height="20" Width="150"
                            Text="Количество: "/>
-
                 <Button Margin="1"
                             Name="сlearButton"
                         
