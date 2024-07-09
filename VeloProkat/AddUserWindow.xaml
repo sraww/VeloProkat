@@ -188,7 +188,6 @@
                         Click="AddImageToUser"/>
             </StackPanel>
         </StackPanel>
-
     </Grid>
 </Window>
 
