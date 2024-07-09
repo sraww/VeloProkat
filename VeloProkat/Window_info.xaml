@@ -47,9 +47,6 @@
                 <TextBox Margin="1" Name="searchBox" Width="100" Height="20"
                          TextChanged="searchBox_TextChanged" />
             </StackPanel>
-
-
-
             <StackPanel Margin="1"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
