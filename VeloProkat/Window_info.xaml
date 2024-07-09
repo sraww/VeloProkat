@@ -62,12 +62,8 @@
                             Width="100"
                             Height="20"
                             Content="Очистить"
-                            Click="сlearButton_Click"
-                             />
-
-
+                            Click="сlearButton_Click"/>
             </StackPanel>
-
             <StackPanel 
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center"
