@@ -34,9 +34,7 @@
                 <TextBlock Margin="1" Text="Сортировка" Height="20" />
                 <ComboBox Margin="1" Name="sortUserComboBox" Height="20" Width="150"
                           SelectionChanged="sortUserComboBox_SelectionChanged"/>
-            </StackPanel>
-
-
+           </StackPanel>
             <StackPanel Margin="1" Grid.Column="2" VerticalAlignment="Center"
                         HorizontalAlignment="Center">
                 <TextBlock Margin="1" Text="Фильтр" Height="20" />
