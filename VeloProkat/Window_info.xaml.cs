@@ -66,9 +66,7 @@ namespace VeloProkat
         {
             new MainWindow().Show();
             this.Close();
-
         }
-
         private void exitButtonClick(object sender, RoutedEventArgs e)
         {
             new MainWindow().Show();
