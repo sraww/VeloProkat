@@ -129,10 +129,7 @@ namespace VeloProkat
                 {
                     currentProducts = currentProducts.Where(u => u.Name.Contains(searchBox.Text) || u.Description.Contains(searchBox.Text)).ToList();
                 }
-
-
                 countProducts.Text = $"Количество: {currentProducts.Count} из {db.Products.ToList().Count}";
-
                 productlistView.ItemsSource = currentProducts;
             }
         }
