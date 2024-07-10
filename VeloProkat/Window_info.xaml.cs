@@ -101,13 +101,11 @@ namespace VeloProkat
                     if (sortUserComboBox.SelectedValue == "По убыванию цены")
                     {
                         currentProducts = currentProducts.OrderByDescending(u => u.Cost).ToList();
-
                     }
 
                     if (sortUserComboBox.SelectedValue == "По возрастанию цены")
                     {
                         currentProducts = currentProducts.OrderBy(u => u.Cost).ToList();
-
                     }
                 }
 
@@ -129,9 +127,7 @@ namespace VeloProkat
 
                 if (searchBox.Text.Length > 0)
                 {
-
                     currentProducts = currentProducts.Where(u => u.Name.Contains(searchBox.Text) || u.Description.Contains(searchBox.Text)).ToList();
-
                 }
 
 
