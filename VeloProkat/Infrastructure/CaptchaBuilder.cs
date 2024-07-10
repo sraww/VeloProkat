@@ -10,10 +10,8 @@ namespace VeloProkat.Infrastructure
     {
         public static string Refresh()
         {
-
-            string captcha = "";
-
-            Random rand = new Random();
+        string captcha = "";
+        Random rand = new Random();
 
             for (int i = 0; i < 3; i++)
             {
