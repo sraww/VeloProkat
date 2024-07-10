@@ -50,12 +50,12 @@ namespace VeloProkat
                     addUser.Visibility = Visibility.Collapsed;
 
                 }
-                //else
-                //{
+                else
+                {
 
-                //    statusUser.Text = "Гость";
-                //    //MessageBox.Show("Гость");
-                //}
+                  statusUser.Text = "Гость";
+                   MessageBox.Show("Гость");
+                }
 
 
                 productlistView.ItemsSource = db.Products.ToList();
