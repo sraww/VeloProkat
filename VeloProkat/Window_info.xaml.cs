@@ -75,8 +75,7 @@ namespace VeloProkat
 
         private void sortUserComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-
-            UpdateProducts();
+         UpdateProducts();
         }
 
         private void filterUserComboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -93,7 +92,6 @@ namespace VeloProkat
         {
             using (VeloProkatContext db = new VeloProkatContext())
             {
-
                 var currentProducts = db.Products.ToList();
                 productlistView.ItemsSource = currentProducts;
 
