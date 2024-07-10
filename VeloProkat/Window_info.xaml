@@ -109,7 +109,6 @@
                                 </Image.Source>
                             </Image>
                         </Border>
-
                         <TextBlock FontSize="15" Text="{Binding ArticleNumber, StringFormat=Артикль:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Category, StringFormat=Категория:{0}}"/>
                         <TextBlock FontSize="15" Text="{Binding Manifacturer, StringFormat=Производитель:{0}}"/>
