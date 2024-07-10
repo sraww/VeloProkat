@@ -134,9 +134,7 @@
 
                 <Button Name="addUser" Margin="1"
                             Content="Добавить товар " Height="20" Width="107"
-                            Click="addUserButtonClick"/>
-
-
+                           Click="addUserButtonClick"/>
                 <Button Name="deleteUser"
         Margin="5"
         Content="Удалить товар"
