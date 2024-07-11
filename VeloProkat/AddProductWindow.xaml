@@ -23,9 +23,7 @@
                              Height="20"
                              IsReadOnly="True"
                              Text="{Binding Id}"/>
-
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock Margin="1" Height="20" Width="152" Text="Имя"/>
                     <TextBox Name="nameBox"
@@ -33,7 +31,6 @@
                              Height="20"
                              Text="{Binding Name}"/>
                 </StackPanel>
-
                 <StackPanel>
                     <TextBlock  Margin="1"
                                 Height="20"
