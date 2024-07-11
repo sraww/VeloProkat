@@ -10,11 +10,9 @@
         <StackPanel Orientation="Horizontal"
                     VerticalAlignment="Center"
                     HorizontalAlignment="Center">
-
             <StackPanel VerticalAlignment="Center"
                         HorizontalAlignment="Center"
                         Margin="10">
-
                 <StackPanel Name="idPanel" Width="150">
                     <TextBlock Margin="1"
                                Height="20"
