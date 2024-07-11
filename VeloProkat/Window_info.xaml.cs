@@ -175,8 +175,8 @@ namespace VeloProkat
             using (VeloProkatContext db = new VeloProkatContext())
             {
 
-             List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
-              foreach (RelatedProduct r in rp)
+           //  List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
+              foreach (RelatedProduct r in r.p)
               {
                    OrderProduct order = db.OrderProducts.Where(o => o.ProductId == r.RelatedProdutId).FirstOrDefault() as OrderProduct;
                  if (order is not null)
