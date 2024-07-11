@@ -175,11 +175,8 @@ namespace VeloProkat
             using (VeloProkatContext db = new VeloProkatContext())
             {
 
-                 найдем все связанные товары с данным товаром
-                List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
-
-        
-             foreach (RelatedProduct r in rp)
+             List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
+              foreach (RelatedProduct r in rp)
               {
                    OrderProduct order = db.OrderProducts.Where(o => o.ProductId == r.RelatedProdutId).FirstOrDefault() as OrderProduct;
                  if (order is not null)
@@ -195,8 +192,7 @@ namespace VeloProkat
 
 
 
-                провека наличи оригинального товара в заказе
-              OrderProduct position = db.OrderProducts.Where(o => o.ProductId == product.Id).FirstOrDefault() as OrderProduct;
+                              OrderProduct position = db.OrderProducts.Where(o => o.ProductId == product.Id).FirstOrDefault() as OrderProduct;
 
                 if (position is not null)
                 {
