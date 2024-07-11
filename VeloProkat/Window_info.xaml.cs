@@ -156,7 +156,7 @@ namespace VeloProkat
                 if (product != null)
                 {
 
-                    if (MessageBox.Show($"Вы точно хотите удалить {product.Name}",!",
+                    if (MessageBox.Show($"Вы точно хотите удалить {product.Name}", "Внимание!",
                         MessageBoxButton.YesNo, MessageBoxImage.Question) == MessageBoxResult.Yes)
                     {
                         db.Products.Remove(product);
