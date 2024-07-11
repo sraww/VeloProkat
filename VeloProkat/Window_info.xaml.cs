@@ -186,14 +186,8 @@ namespace VeloProkat
                         return false;
                    }
                }
-
-
-               return true;
-
-
-
-                              OrderProduct position = db.OrderProducts.Where(o => o.ProductId == product.Id).FirstOrDefault() as OrderProduct;
-
+              return true;
+              OrderProduct position = db.OrderProducts.Where(o => o.ProductId == product.Id).FirstOrDefault() as OrderProduct;
                 if (position is not null)
                 {
                    MessageBox.Show($"Товар: {product.Name} присутствует в товарной позиции заказа {position.OrderId}. \n Товар нельзя удалить!");
