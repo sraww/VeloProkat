@@ -193,11 +193,9 @@ namespace VeloProkat
                    MessageBox.Show($"Товар: {product.Name} присутствует в товарной позиции заказа {position.OrderId}. \n Товар нельзя удалить!");
                     return false;
                }
-
                 return true;
            }
         }
-
         private void EditProduct_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
             Product p = (sender as ListView).SelectedItem as Product;
