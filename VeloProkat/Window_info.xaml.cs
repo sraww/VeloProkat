@@ -170,32 +170,32 @@ namespace VeloProkat
             }
 
         }
-        //private bool CanDeleteProduct(Product product)
-        //{
-        //    using (VeloProkatContext db = new VeloProkatContext())
-        //    {
+        private bool CanDeleteProduct(Product product)
+        {
+            using (VeloProkatContext db = new VeloProkatContext())
+            {
 
-        //        // найдем все связанные товары с данным товаром
-        //        List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
+                 найдем все связанные товары с данным товаром
+                List<RelatedProduct> rp = db.RelatedProducts.Where(p => p.ProductId == product.Id).ToList();
 
-        //        // найдем, существуют ли товарные позиции из нашего списка связанных товаров и самого товара в заказах
-        //        foreach (RelatedProduct r in rp)
-        //        {
-        //            OrderProduct order = db.OrderProducts.Where(o => o.ProductId == r.RelatedProdutId).FirstOrDefault() as OrderProduct;
-        //            if (order is not null)
-        //            {
-        //                Product p = db.Products.Where(p => p.Id == r.RelatedProdutId).FirstOrDefault() as Product;
-        //                MessageBox.Show($"Товар {p.Name} связан с товаром {product.Name} присутствует в товарной позиции заказа {order.OrderId}. \n Товары нельзя удалить!");
-        //                return false;
-        //            }
-        //        }
-
-
-        //        return true;
+        
+             foreach (RelatedProduct r in rp)
+              {
+                   OrderProduct order = db.OrderProducts.Where(o => o.ProductId == r.RelatedProdutId).FirstOrDefault() as OrderProduct;
+                 if (order is not null)
+                  {
+                       Product p = db.Products.Where(p => p.Id == r.RelatedProdutId).FirstOrDefault() as Product;
+                      MessageBox.Show($"Товар {p.Name} связан с товаром {product.Name} присутствует в товарной позиции заказа {order.OrderId}. \n Товары нельзя удалить!");
+                        return false;
+                   }
+               }
 
 
+               return true;
 
-        //        // провека наличи оригинального товара в заказе
+
+
+               // провека наличи оригинального товара в заказе
         //        OrderProduct position = db.OrderProducts.Where(o => o.ProductId == product.Id).FirstOrDefault() as OrderProduct;
 
         //        if (position is not null)
@@ -205,7 +205,7 @@ namespace VeloProkat
         //        }
 
         //        return true;
-        //    }
+        /   }
 //        }
 
         private void EditProduct_MouseDoubleClick(object sender, MouseButtonEventArgs e)
