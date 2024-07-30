@@ -156,7 +156,6 @@
                         Click="saveProductButtonClick"/>
                 </StackPanel>
             </StackPanel>
-
             <StackPanel Margin="10"
                         VerticalAlignment="Center"
                         HorizontalAlignment="Center">
@@ -190,8 +189,6 @@
                         Click="AddImageToUser"/>
 
             </StackPanel>
-
-
         </StackPanel>
     </Grid>
 </Window>
